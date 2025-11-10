@@ -24,7 +24,9 @@ li {
   list-style: none;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   color: #252525;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -121,6 +123,21 @@ footer {
   a:hover {
     border-bottom: 1px solid black;
   }
+
+  #cover-text {
+    width: 300px;
+    right: 50px;
+  }
+  #benefits {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  #benefits-mental {
+    align-text: end;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -147,4 +164,93 @@ footer {
   height: 600px;
   width: 100%;
   background: url("../images/hero-image.webp") no-repeat center center/cover;
+  position: relative;
+}
+
+#cover-text {
+  background-color: rgba(241, 109, 107, 0.7);
+  font-size: 130%;
+  position: absolute;
+  bottom: 30px;
+  width: 80%;
+  min-height: 200px;
+  padding-top: 40px;
+  padding-left: 10px;
+}
+
+#cover-text > h2,
+#cover-text > h3 {
+  color: white;
+}
+
+#benefits {
+  margin: 20px;
+}
+
+#reasons {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#reasons > h1 {
+  text-align: center;
+  font-size: 280%;
+}
+#benefits-physical {
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+#benefits-mental {
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+#benefits-physical > p {
+  border-top: 1px solid black;
+  margin: 5px 0;
+  padding: 0 20px;
+}
+
+#benefits-mental > p {
+  border-top: 1px solid black;
+  margin: 5px 0;
+  padding: 0 20px;
+}
+
+#benefits-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#circle-cover-bg {
+  background: url("../images/reasons-image.webp") no-repeat center center/cover;
+  height: 90vw;
+  width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+#times {
+  background: url("../images/dublin-city.webp") no-repeat center center/cover;
+  display: flex;
+  gap: 0.2rem;
+  flex-wrap: wrap;
+  margin: 15pxl;
+}
+
+#times div {
+  color: #fafafa;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  text-align: center;
+  flex-grow: 1;
+  flex-basis: 200px;
+  border: 2px solid white;
+}
+
+#times h3 {
+  color: #fafafa;
 }
