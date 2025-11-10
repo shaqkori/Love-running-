@@ -9,6 +9,8 @@ body {
   display: flex;
   flex-direction: column;
   color: #3a3a3a;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
 }
 
 main {
