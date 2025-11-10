@@ -140,9 +140,19 @@ footer {
   }
 }
 
+@media screen and (min-width: 576px) {
+  #photos {
+    column-count: 2;
+    column-gap: 0;
+  }
+}
 @media screen and (min-width: 992px) {
   a:hover {
     border-bottom: 1px solid black;
+  }
+  #photos {
+    column-count: 3;
+    column-gap: 0;
   }
 }
 
@@ -253,4 +263,13 @@ footer {
 
 #times h3 {
   color: #fafafa;
+}
+
+#photos img {
+  width: 100%;
+  line-height: 1em;
+}
+
+#photos {
+  line-height: 0;
 }
