@@ -1,3 +1,9 @@
+/*
+    tablet = 768px
+    laptop = 992px
+    desktop = 1200px
+*/
+
 * {
   padding: 0;
   margin: 0;
@@ -11,6 +17,7 @@ body {
   color: #3a3a3a;
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
+  background: lightblue;
 }
 li {
   text-decoration: none;
@@ -78,8 +85,60 @@ nav {
 main {
   background-color: lightblue;
   flex: 1 0 auto;
+  margin-top: 40px;
 }
 
 footer {
   background: yellow;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
+  }
+  #menu {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+
+  .logo {
+    font-size: 200%;
+    line-height: 75px;
+    margin: 0 0.5rem;
+  }
+
+  main {
+    margin-top: 79px;
+  }
+  a:hover {
+    border-bottom: 1px solid black;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  a:hover {
+    border-bottom: 1px solid black;
+  }
+}
+
+#social-network {
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  background: white;
+}
+
+#social-network i {
+  font-size: 160%;
+  padding: 5%;
+  color: #3a3a3a;
 }
